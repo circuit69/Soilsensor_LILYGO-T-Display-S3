@@ -33,8 +33,8 @@ void setup() {
 
 void loop() {
   scrn.fillSprite(TFT_BLACK);
-  float tempC = ss.getTemp();
-  uint16_t capread = ss.touchRead(0);
+  float tempC = ss.getTemp();           //Temeperature Sensor
+  uint16_t capread = ss.touchRead(0);   //Moisture sensor
 
   scrn.drawCentreString("Soil Sensor", 160, 0, 4);
   scrn.drawString("Temperature:", 0, 40, 4);
